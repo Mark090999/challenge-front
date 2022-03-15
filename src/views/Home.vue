@@ -23,7 +23,7 @@
                   <b-col>   
                     <label for="ori" style="font-size: 14px;"></label>
                     <b-input-group size="md">                 
-                    <b-button variant="primary" size="md" class="mb-2">
+                    <b-button variant="primary" size="md" class="mb-2" @click="goCards()">
                       <b-icon icon="search" aria-hidden="true"></b-icon> Buscar
                     </b-button>
                     </b-input-group>
@@ -50,6 +50,12 @@ export default {
       cities: ['Quito', 'Loja', 'Macara']
     };
   },
+  methods: {
+    goCards(){
+      const link = `cards`;
+      this.$router.push({path: link});
+    }
+  }
 };
 </script>
 

@@ -8,6 +8,7 @@ import Router from 'vue-router'
 // Views - Pages
 //const Page404 = () => import('../views/pages/Page404')
 const Main = () => import('../views/Home.vue')
+const Cards = () => import('../views/Cards.vue')
 
 Vue.use(Router)
 
@@ -24,6 +25,14 @@ function configRoutes () {
       path: '/',
       name: 'Main',
       component: Main,
+      meta: {
+        permission: 'public'
+      }
+    },
+    {
+      path: '/cards',
+      name: 'Cards',
+      component: Cards,
       meta: {
         permission: 'public'
       }
