@@ -8,7 +8,7 @@ import Router from 'vue-router'
 // Views - Pages
 //const Page404 = () => import('../views/pages/Page404')
 const Main = () => import('../views/Home.vue')
-const Cards = () => import('../views/Cards.vue')
+const Tickets = () => import('../views/Tickets.vue')
 
 Vue.use(Router)
 
@@ -30,9 +30,9 @@ function configRoutes () {
       }
     },
     {
-      path: '/cards',
-      name: 'Cards',
-      component: Cards,
+      path: '/tickets',
+      name: 'Tickets',
+      component: Tickets,
       meta: {
         permission: 'public'
       }

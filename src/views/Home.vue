@@ -52,7 +52,7 @@ export default {
   },
   methods: {
     goCards(){
-      const link = `cards`;
+      const link = `tickets`;
       this.$router.push({path: link});
     }
   }
