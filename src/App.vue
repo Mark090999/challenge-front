@@ -1,6 +1,6 @@
 <template>
   <div id="container">
-  <nav-bar></nav-bar>  
+  <NavBar></NavBar>
   <router-view></router-view>
   <Footer></Footer>
   </div>
