@@ -6,21 +6,21 @@
             <b-card-body>
               <b-container class="bv-example-row">
                 <b-row>
-                  <b-col>                    
+                  <b-col md="5">                    
                     <label for="ori" style="font-size: 14px;">Ciudad de origen y destino</label>
                     <b-input-group size="md">
                       <b-form-input list="my-cities" id="ori" placeholder="Origen"></b-form-input>
                       <b-form-input list="my-cities" placeholder="Destino"></b-form-input>
                     </b-input-group>
                   </b-col>
-                  <b-col>
+                  <b-col md="5">
                     <label for="ori" style="font-size: 14px;">Fecha de Salida y retorno</label>
                     <b-input-group size="md">
                       <b-form-input placeholder="Salida" type="date"></b-form-input>
                       <b-form-input placeholder="Retorno" type="date"></b-form-input>
                     </b-input-group>
                   </b-col>
-                  <b-col>   
+                  <b-col md="2">   
                     <label for="ori" style="font-size: 14px;"></label>
                     <b-input-group size="md">                 
                     <b-button variant="primary" size="md" class="mb-2" @click="goCards()">
