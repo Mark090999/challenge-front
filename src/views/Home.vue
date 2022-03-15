@@ -47,8 +47,11 @@ export default {
   },
   data() {
     return {
-      cities: ['Quito', 'Loja', 'Macara']
+      cities: []
     };
+  },
+  async created(){
+    this.cities = this.$store.state.cities;
   },
   methods: {
     goCards(){
