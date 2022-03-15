@@ -7,7 +7,7 @@ import Router from 'vue-router'
 
 // Views - Pages
 //const Page404 = () => import('../views/pages/Page404')
-const Main = () => import('../views/Test.vue')
+const Main = () => import('../views/Home.vue')
 
 Vue.use(Router)
 
